@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+}
+
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Grenze', serif;
+}
+
+#welcome-section p {
+  margin-top: 30px;
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Grenze', serif;
+}
+
+#contact h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Grenze', serif;
+}
+
+#contact p {
+  margin-top:20px;
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Grenze', serif;
+}
+
+#navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  left:0;
+  top:0;
+  right:0;
+  height: 60px;
+  background: brown;
+  font-size: 1.6rem;
+  align-items: center;
+  color: white;
+  font-family: 'Mansalva', cursive;
+}
+
+#projects {
+  display: flex;
+  background: gray;
+  font-family: 'Mansalva', cursive;
+  text-align: center;
+  padding: 0 4rem 0 4rem;
+  font-size: 2rem;
+  height: 100vh;
+  flex-direction: column;
+}
+
+#project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+}
+
+.project-image {
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#profile-link {
+  display: block;
+  margin-top: -120px;
+  color: brown;
+  text-align: center;
+}
+
+#heading-margin {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.picture-description {
+  padding-top: 40px;
+  margin-bottom: 60px;
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: CornflowerBlue;
+  height: 100vh;
+}
+
+.code {
+  color: gray;
+}
+
+.project-tile:hover .code {
+  color: white;
+}
+
+@media (max-width: 857px){
+  #projects {
+    height: 200vh;
+    font-size: 1.5rem;
+  }
+  h1 {
+  font-size: 1.9rem;
+  }
+
+  #welcome-section p {
+  font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 595px){
+  #projects {
+  height: 300vh;
+  font-size: 1rem;  
+  }
+}
+
