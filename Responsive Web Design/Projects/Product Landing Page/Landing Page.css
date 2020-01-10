@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+  }
+  
+  :root {
+    --gray-font: rgb(88,88,88);
+    --newsletter-font: navy;
+  }
+
+  li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #header {
+    background: linear-gradient(to bottom right, black, var(--gray-font));
+    position: fixed;
+    justify-content: space-between;
+    display: flex;
+    height: 3rem;
+    width: 100%;
+    z-index: 1;
+  }
+
+  #header-img {
+    width: 15rem;
+    filter: brightness(100%);
+  }
+  
+  #nav-bar {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    width: 30rem;
+    align-items: center;
+    vertical-align: center;
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: 500px) {
+    #header {
+        flex-direction: column;
+        height: 4rem;
+        align-items: center;
+        padding-bottom: 0.5rem;
+    }
+    #header-img {
+        width: 10rem;
+    }
+    #nav-bar {
+        font-size: 1rem;
+        width: 15rem;
+    }
+  }
+
+  #moto-banner {
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  #form {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 20%;
+    left: 4%;
+    top: 20%;
+  }
+
+  @media (max-width: 500px) {
+    #form {
+      top: 35%;
+    }
+  }
+
+  .email-newsletter {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 22%;
+  }
+
+  h2 {
+    color: white;
+    font-family: "Times New Roman";
+    text-shadow: 1px 0 var(--newsletter-font), 0 1px var(--newsletter-font), -1px 0 var(--newsletter-font), 0 -1px var(--newsletter-font);
+    font-size: 2vw;
+  }
+
+  main {
+    position: relative;
+  }
+
+  #label-text {
+    display: flex;
+    font-size: 2vw;
+    font-weight: 800;
+    text-align: center;
+    align-items: center;
+  }
+
+  #email-vertical {
+    position: absolute;
+    top: 50%; 
+  }
+
+  input[type=email] {
+    border-radius: 1rem;
+    border-width: 0.1rem;
+    border-color: black;
+    box-shadow: 0.2rem 0.2rem 0.2rem gray; 
+    font-size: 2vw;
+    text-align: center;
+  }
+
+  .email-newsletter > input[type=submit] {
+    background: black;
+    color: white;
+    border-radius: 1rem;
+    border-color: black;
+    box-shadow: 0.2rem 0.2rem 0.2rem gray; 
+    font-size: 2vw;
+  }
+
+  @media (max-width: 500px) {
+    #moto-banner {
+    margin-top: 4.5rem;
+    }
+  }
+
+  #features {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+  
+  .features {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+  
+  article {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 50vw;
+  }
+  
+  h3 {
+    text-transform: capitalize;
+  }
+
+  .performance-img {
+    width: 300px;
+  }
+
+  @media (max-width: 800px) {
+    .performance-img {
+      width: 200px;
+    }
+    h3 {
+      font-size: 1rem;
+    }
+    span {
+      font-size: 0.75rem;
+    }
+    .features {
+      flex-direction: column;
+      text-align: center;
+    }
+    #article {
+      display: flex;
+               
+    }
+  }
+
+  video {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+  }
+  
+  #video-background {
+    background: linear-gradient(to right, rgb(243, 243, 41), rgb(11, 146, 11));
+  }
+
+  @media (max-width: 500px) {
+    video {
+      width: 80%;
+    }
+    #features {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+    }
+  }
+
+  .price-section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10rem;
+    width: 80%;
+    margin-left: 10vw;
+  }
+  
+  .phone {
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+    height: 23rem;
+  }
+  
+  .buy-middle {
+    margin-bottom: 0.8rem;
+  }
+  
+  hr {
+    margin: 5rem;
+    margin-top:-8rem;
+  }
+
+  .phone > input[type=submit]{
+    background: linear-gradient(to right, rgb(243, 243, 41), rgb(11, 146, 11));;
+    width: 7rem;
+    border-radius: 1rem;
+  }
+
+  @media (max-width: 800px) {
+    .price-section {
+      flex-direction: column;
+    }
+    .price-margin {
+      margin-bottom: -4rem;
+    }
+    .buy {
+      margin-top: -3rem;
+    }
+  }
