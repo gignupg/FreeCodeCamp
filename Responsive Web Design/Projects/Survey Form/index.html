@@ -1,0 +1,57 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<h1 id="title">Feedback</h1>
+
+<form action="/imaginary URL" id="survey-form">
+  <p id="description"><strong>If you've enjoyed the app, please leave some feedback!</strong></p>
+  <div class="personal-information">
+    <div class="info-text">
+      <label for="name" id="name-label">Name</label>
+    </div>
+    <div class="info-box">
+      <input type="text" placeholder="Type in your name here!"id="name" required>
+    </div>
+  </div>  
+  <div class="personal-information">
+    <div class="info-text">
+      <label for="email" id="email-label">Email</label>
+    </div>
+    <div class="info-box">
+      <input type="email" placeholder="Type in your email here!" id="email" required>
+    </div>
+  </div>    
+  <div class="personal-information">  
+    <div class="info-text">
+      <label for="number" id="number-label">Age</label>
+    </div>
+    <div class="info-box">
+      <input type="number" id="number" min="18" max="65" placeholder="Type in a number here">
+      </div>
+  </div>   
+  <label for="dropdown" class="info-text" id="dropid">How satisfied are you with LingQ?</label>
+  <select id="dropdown" class="info-box">
+    <option disabled value>Please choose one of the following options</option>   
+    <option value="option 1">happy</option>
+    <option value="option 2">not impressed</option>  
+    <option value="option 3">unhappy</option> 
+  </select>
+  <p class="info-text" id="radioid">Hours spend learning per week</p>
+  <div class="info-box" id="radio-buttons">
+    <div class="personal-information"><label class="floating-label">Less than 2 hours<input type="radio" name="radio-name" value="1"</label></div>
+    <div><label>2-5 hours<input type="radio" name="radio-name" value="2"</label></div>
+    <div class="personal-information"><label>5-10 hours<input type="radio" name="radio-name" value="3"</label></div>
+  </div>
+  <label for="checkid" class="info-text">Things that could be improved</label> 
+  <div id="checkid" class="info-box">
+    <div><label>Design of the website<input type="checkbox" value="1"</label></div>
+    <div><label>Forum<input type="checkbox" value="2"</label></div>
+    <div><label>Customer support<input type="checkbox" value="3"</label></div>
+    <div><label>Community area<input type="checkbox" value="4"</label></div>   
+    <div><label>Funcionality<input type="checkbox" value="5"</label></div>   
+  </div>
+  <p id="feedback">Additional feedback</p>    
+  <textarea  id="comments" cols="30" rows="10" placeholder="If there is anything else you want to let us know feel free to submit a comment here!"></textarea>   
+  <button id="submit" type="submit">SUBMIT</button>      
+            
+    </form>
+
