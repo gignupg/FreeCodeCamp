@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+ol > li {
+  margin-top: 7px;
+  list-style: initial;
+}
+
+ul > li {
+  margin-top: 7px;
+  list-style: initial;
+}
+
+code {
+  display: block;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+#navbar {
+  background: gray; 
+  position: fixed;
+}
+
+#navbar ul {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  color: white;
+  position: fixed;
+  top: 130px;
+  bottom: 0px;
+  left: 0px;
+  width: 250px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+nav > header {
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 250px;
+  background: gray; 
+}
+
+main header {
+  font-size: 2.3rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+#main-doc {
+  text-align: left;
+  position: absolute;
+  left: 250px;
+  top: 0;
+  margin: 0 60px 0 60px;
+}
+
+.main-section {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 700px) {
+  #main-doc {
+    margin: 0 20px 0 20px;
+    left: 0;
+  }
+  main header {
+    font-size: 1.6rem;
+  }
+  nav header {
+    left: -250px;
+  }
+  navbar ul {
+    left: -250px;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
+#Objects code {
+  display: inline-block;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+}

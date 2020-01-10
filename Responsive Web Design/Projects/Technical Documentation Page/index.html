@@ -1,0 +1,130 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Technical Documentation Page</title>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">         </script>
+</head>
+  
+<body>
+  <nav id="navbar">
+    <header>AutoHotkey Documentation</header>
+    <ul>
+      <li><a href="#What_is_AutoHotkey" class="nav-link">What is AutoHotkey</a></li> 
+      <li><a href="#Download" class="nav-link">Download</a></li>
+      <li><a href="#Multiple_Hotkeys" class="nav-link">Multiple Hotkeys</a></li>
+      <li><a href="#Running_Programs" class="nav-link">Running Programs</a></li>
+      <li><a href="#User_Input" class="nav-link">User Input</a></li>
+      <li><a href="#Objects" class="nav-link">Objects</a></li>
+    </ul>   
+  </nav>
+  <main id="main-doc">
+    <section id="What_is_AutoHotkey" class="main-section">
+      <header>What is AutoHotkey</header>
+      <p>AutoHotkey is a free, open-source custom scripting language for Microsoft Windows, initially aimed at providing easy keyboard shortcuts or hotkeys, fast macro-creation and software automation that allows users of most levels of computer skill to automate repetitive tasks in any Windows application. </p>
+      <br>
+      <p>User interfaces can easily be extended or modified by AutoHotkey (for example, overriding the default Windows control key commands with their Emacs equivalents).[6] The AutoHotkey installation includes its own extensive help file, and web-based documentation is also available.</p>
+    </section>
+    <section id="Download" class="main-section">
+      <header>Download</header>
+      <p>Before learning to use AutoHotkey (AHK), you will need to download it. After downloading it, you may possibly need to install it. But that depends on the version you want. For this guide we will use the Installer since it is easiest to set up.</p>
+      <br>
+      <code>My first script</code>
+      <br>
+      <p><strong>Text instructions:</strong></p>
+      <ol>
+        <li>Go to the AutoHotkey Homepage: https://www.autohotkey.com/</li>
+        <li>Click Download: https://www.autohotkey.com/download/ahk-install.exe</li>
+        <li>During installation of AutoHotkey, you will be asked to choose from UNICODE or ANSI. In short, you would probably want to choose UNICODE. It has support for non-English letters and numbers (characters). Keep going until you see an Install button.</li>
+        <li>Once done, great! Continue on to section b.</li>
+      </ol>
+    </section>
+    <section id="Multiple_Hotkeys" class="main-section">
+      <header>Multiple Hotkeys</header>
+      <p>This, for some reason crosses some people's minds. So I'll set it clear: AutoHotkey has the ability to have as many hotkeys and hotstrings in one file as you want. Whether it's 1, or 3253 (or more).</p>
+      <code>#i::<br>
+Run, http://www.google.com/<br>
+return<br><br>
+
+^p::<br>
+Run, notepad.exe<br>
+return<br>
+
+~j::<br>
+Send, ack<br>
+return<br><br>
+
+:*:acheiv::achiev<br>
+::achievment::achievement<br>
+::acquaintence::acquaintance<br>
+:*:adquir::acquir<br>
+::aquisition::acquisition<br>
+:*:agravat::aggravat<br>
+:*:allign::align<br>
+::ameria::America</code>
+      <p>The above code is perfectly acceptable. Multiple hotkeys, multiple hotstrings. All in one big happy script file.</p>
+      <li></li>
+    </section>
+    <section id="Running_Programs" class="main-section">
+      <header>Running Programs</header>
+      <p>To run a program such as mspaint.exe, calc.exe, script.ahk or even a folder, you can use the Run command. It can even be used to open URLs such as https://www.autohotkey.com/ . If your computer is setup to run the type of program you want to run, it's very simple:</p>
+      <code>; Run a program. Note that most programs will require a FULL file path:<br>
+Run, %A_ProgramFiles%\Some_Program\Program.exe<br><br>
+
+; Run a website:<br>
+Run, https://www.autohotkey.com</code>
+      <p>There are some other advanced features as well, such as command line parameters and CLSID. If you want to learn more about that stuff, visit the Run page.
+
+Here are a few more samples:</p>
+      <code>; Several programs do not need a full path, such as Windows-standard programs:<br>
+Run, notepad.exe<br>
+Run, mspaint.exe<br><br>
+
+; Run the "My Documents" folder using a built-in variable:<br>
+Run, %A_MyDocuments%<br><br>
+
+; Run some websites:<br>
+Run, https://www.autohotkey.com<br>
+Run, http://www.google.com</code>
+      <li></li>
+    </section>
+    <section id="User_Input" class="main-section">
+      <header>User Input</header>
+      <p>Sometimes you want to have the user to choose the value of stuff. There are several ways of doing this, but the simplest way is InputBox. Here is a simple example on how to ask the user a couple of questions and doing some stuff with what was entered:</p>
+      <p></p>
+      <code>InputBox, OutputVar, Question 1, What is your first name?<br>
+if (OutputVar = "Bill")<br>
+    MsgBox, That's an awesome name`, %OutputVar%.<br><br>
+
+InputBox, OutputVar2, Question 2, Do you like AutoHotkey?<br>
+if (OutputVar2 = "yes")<br>
+    MsgBox, Thank you for answering %OutputVar2%`, %OutputVar%! We will become great friends.<br>
+else<br>
+    MsgBox, %OutputVar%`, That makes me sad.</code>
+      <li></li>
+    </section>
+    <section id="Objects" class="main-section">
+      <header>Objects</header>
+      <p>Objects are a way of organizing your data for more efficient usage. Sometimes objects are referred to as arrays, but it's important to note that all arrays are just objects. We call objects different things depending on what we are using them for, but all objects are the same. <br><br>
+
+An object is basically a collection of variables. The variable names are known as "Keys", and the contents of the variables are "Values".<br><br>
+
+When you hear people calling an object an array or indexed array, it usually means that all the keys are sequential numbers 1 and up. When you hear people calling an object an associative array, it means that the keys are either strings (text) or non-sequential numbers. Sometimes it's a mix of both, and sequential numbers too!<br><br>
+
+There are no restrictions to what a key or value can be, and they can even be other arrays! When the values are arrays too, this is referred to as a nested array, and these will be explained later.<br><br>
+
+There are a number of reasons you might want to use an object for something. Some examples:</p>
+      <p></p>
+      <code></code>
+      <ul>
+        <li>You want to have a numbered list of things, such as a grocery list (this would be referred to as an indexed array)</li>
+        <li>You want to represent a grid, perhaps for a board game (this would be done with nested objects)</li>
+        <li>You have a list of things where each thing has a name, such as the characteristics of a fruit (this would be referred to as an associative array)</li>
+      </ul>  
+    </section>
+  </main>
+    
+</body>
+</html>
