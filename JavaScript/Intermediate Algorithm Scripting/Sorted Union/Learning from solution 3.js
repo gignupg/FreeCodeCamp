@@ -1,6 +1,6 @@
 function uniteUnique() {
 
-    let args = [...arguments]
+    let args = [].slice.call(arguments)
 
     return args.reduce((acc, item) => { 
         item.forEach(elem => {
@@ -13,4 +13,6 @@ function uniteUnique() {
   
 uniteUnique([1, 3, 2, 1], [5, 2, 1, 4], [2, 1])
 
-//Utilizing reduce()
+// Solution 3:
+// let args = Array.prototype.slice.call(arguments) or let args = [].slice.call(arguments)
+// Another way to transform something into an array. Kind of long winded but good to know, in case I see it somewhere.
