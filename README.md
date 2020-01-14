@@ -9,6 +9,6 @@ https://www.freecodecamp.org/learn
 
 Files with the name:
 
-"First Attempt": Solving coding challenges without consulting the solutions.
+"My Solution": Solving coding challenges without looking at the solutions provided by FreeCodeCamp.
 
-"Learning from solution": Reading the solution, trying to comprehend and internalize it, then recreating it. 
+"Learning from solution i": Reading the solution, trying to comprehend and internalize it, then recreating it. 
