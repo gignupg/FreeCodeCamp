@@ -24,3 +24,5 @@ function pairElement(str) {
   }
   
   pairElement("GCG")
+
+//   just a comment
