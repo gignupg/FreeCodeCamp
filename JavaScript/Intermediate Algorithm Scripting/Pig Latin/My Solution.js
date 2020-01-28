@@ -18,6 +18,8 @@ function translatePigLatin(str) {
     // str = str.replace(/^./)
     console.log(str)
   }
-  
+
   translatePigLatin("glove");
   translatePigLatin("algorithm");
+
+// Using git for the first time
