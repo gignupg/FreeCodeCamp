@@ -11,4 +11,4 @@ Files with the name:
 
 "My Solution": Solving coding challenges without looking at the solutions provided by FreeCodeCamp.
 
-"Learning from solution i": Reading the solution, trying to comprehend and internalize it, then recreating it. 
+"Learning from solution x": Reading the solution, trying to comprehend and internalize it, then recreating it. 
