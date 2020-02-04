@@ -5,3 +5,4 @@ function dropElements(arr, func) {
   
   dropElements([1, 2, 3], function(n) {return n < 3; });
   
+  // A new comment
