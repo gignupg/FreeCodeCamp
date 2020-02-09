@@ -20,6 +20,6 @@ var Person = function(firstAndLast) {
     }
 }
   
-  var bob = new Person("Bob Ross")
-  bob.setFirstName("Michael")
-  console.log(bob.getFullName())
+var bob = new Person("Bob Ross")
+bob.setFirstName("Michael")
+console.log(bob.getFullName())
