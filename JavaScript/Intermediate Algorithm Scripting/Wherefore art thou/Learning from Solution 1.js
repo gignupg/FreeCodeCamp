@@ -1,10 +1,6 @@
 function whatIsInAName(collection, source) {
     var arr = [];
-    let sourceKeys = []
-
-    for (let key in source){
-        sourceKeys.push(key)
-    }
+    let sourceKeys = Object.keys(source)
   
     arr = collection.filter(elem => {
         for (let sourceIdx in sourceKeys){
