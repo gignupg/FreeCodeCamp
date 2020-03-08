@@ -1,6 +1,6 @@
 function dropElements(arr, func) {
-    const ROUNDS = arr.length
-    for (let i = 0; i < ROUNDS; i++){
+
+    for (let i = 0; i < arr.length; i++){
         if (func(arr[0])) break
         else arr.shift()
     }
