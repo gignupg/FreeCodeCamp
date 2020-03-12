@@ -1,7 +1,7 @@
 function palindrome(str) {
     let strClean = str.replace(/\W+|_/g, "").toLowerCase()
     let reverseClean = []
-    let reverser = strClean.split("").forEach(a => {
+    strClean.split("").forEach(a => {
         reverseClean.unshift(a)
     })
     return strClean === reverseClean.join("")
